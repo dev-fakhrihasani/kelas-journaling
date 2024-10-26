@@ -67,7 +67,7 @@
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                display.textContent = "1 hari : " + (hours < 10 ? "0" : "") + hours + " jam : " +
+                display.textContent = (hours < 10 ? "0" : "") + hours + " jam : " +
                     (minutes < 10 ? "0" : "") + minutes + " menit : " +
                     (seconds < 10 ? "0" : "") + seconds + " detik";
 
